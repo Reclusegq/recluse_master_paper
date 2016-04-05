@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: ustcthesis.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: bib/tex.bib
+Warning--string name "may" is undefined
+--line 12 of file bib/tex.bib
+You've used 5 entries,
+            3132 wiz_defined-function locations,
+            745 strings with 6625 characters,
+and the built_in function-call counts, 4822 in all, are:
+= -- 458
+> -- 14
+< -- 31
++ -- 374
+- -- 31
+* -- 214
+:= -- 533
+add.period$ -- 0
+call.type$ -- 5
+change.case$ -- 14
+chr.to.int$ -- 6
+cite$ -- 5
+duplicate$ -- 586
+empty$ -- 215
+format.name$ -- 28
+if$ -- 1266
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 0
+newline$ -- 46
+num.names$ -- 5
+pop$ -- 61
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 72
+stack$ -- 0
+substring$ -- 480
+swap$ -- 208
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 60
+width$ -- 6
+write$ -- 98
+(There was 1 warning)

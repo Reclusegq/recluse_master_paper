@@ -1,0 +1,63 @@
+\begin{thebibliography}{1}
+\providecommand{\bibauthor}[1]{#1}
+\providecommand{\bibeditor}[1]{#1}
+\providecommand{\bibtranslator}[1]{#1}
+\providecommand{\bibtitle}[1]{#1}
+\providecommand{\bibbooktitle}[1]{#1}
+\providecommand{\bibjournal}[1]{#1}
+\providecommand{\bibmark}[1]{#1}
+\providecommand{\bibcountry}[1]{#1}
+\providecommand{\bibpatentid}[1]{#1}
+\providecommand{\bibedition}[1]{#1}
+\providecommand{\biborganization}[1]{#1}
+\providecommand{\bibaddress}[1]{#1}
+\providecommand{\bibpublisher}[1]{#1}
+\providecommand{\bibinstitution}[1]{#1}
+\providecommand{\bibschool}[1]{#1}
+\providecommand{\bibvolume}[1]{#1}
+\providecommand{\bibnumber}[1]{#1}
+\providecommand{\bibversion}[1]{#1}
+\providecommand{\bibpages}[1]{#1}
+\providecommand{\bibmodifydate}[1]{#1}
+\providecommand{\bibcitedate}[1]{#1}
+\providecommand{\bibyear}[1]{#1}
+\providecommand{\bibdate}[1]{#1}
+\providecommand{\biburl}[1]{\newline\url{#1}}
+\makeatletter\ifustc@opt@bachelor
+\newcommand\ustcjournal{\textit}
+\else\newcommand\ustcjournal{}
+\fi\makeatother
+
+\bibitem{mittelbach04}
+\bibauthor{MITTELBACH F\@, GOOSSENS M\@, BRAAMS J, et~al}\@.
+  \bibbooktitle{Tools and Techniques for Computer
+  Typesetting\thinspace{}\textnormal{: }The {\LaTeX} Companion}\bibmark{[M]}\@.
+  \bibedition{\mbox{Second}}\@. \bibaddress{Reading, MA,
+  USA}\thinspace{}\textnormal{: }\bibpublisher{Ad{\-d}i{\-s}on-Wes{\-l}ey}\@,
+  \bibyear{2004}\@.
+
+\bibitem{lamport94}
+\bibauthor{LAMPORT L}\@. \bibbooktitle{{\LaTeX}: a Document Preparation System:
+  User's Guide and Reference Manual}\bibmark{[M]}\@.
+  \bibedition{\mbox{Second}}\@. \bibaddress{Reading, MA,
+  USA}\thinspace{}\textnormal{: }\bibpublisher{Ad{\-d}i{\-s}on-Wes{\-l}ey}\@,
+  \bibyear{1994}\@.
+
+\bibitem{knuth86a}
+\bibauthor{KNUTH D~E}\@. \bibbooktitle{Computers and Typesetting\@,
+  Vol~A\thinspace{}\textnormal{: }The {\TeX}book}\bibmark{[M]}\@.
+  \bibaddress{Reading, MA, USA}\thinspace{}\textnormal{:
+  }\bibpublisher{Ad{\-d}i{\-s}on-Wes{\-l}ey}\@, \bibyear{1986}\@.
+
+\bibitem{刘海洋2013}
+\bibauthor{刘海洋}\@. \bibbooktitle{{\LaTeX}入门}\bibmark{[M]}\@.
+  \bibaddress{北京}\thinspace{}\textnormal{:
+  }\bibpublisher{电子工业出版社}\@, \bibyear{2013}\@.
+
+\bibitem{knuth84}
+\bibauthor{KNUTH D~E}\@. \bibtitle{Literate Programming}\bibmark{[J]}\@.
+  \bibjournal{\ustcjournal{The Computer Journal}}\@, \bibyear{1984}\@,
+  \bibvolume{27}\bibnumber{(2)}\thinspace{}\textnormal{:
+  }\bibpages{97\thinspace{}\textnormal{--}\thinspace{}111}\@.
+
+\end{thebibliography}
