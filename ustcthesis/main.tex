@@ -4,12 +4,22 @@
 \documentclass[master, print, twoside, openright, fontset=windows]{ustcthesis}
 % bachelor|master|doctor
 \usepackage{ustcextra}
+
+% 添加的包　by recluse
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{subfigure}
+\usepackage{diagbox}
+\usepackage{array}
+\usepackage{bm}  %公式的部分字体加粗
+
+
 \graphicspath{{figures/}}
 
 \title{中国科学技术大学\\基于智能手机的行为识别系统设计}
 \author{郭乾}
 \major{电子与通信工程专业}
-\advisor{刘斌\ 教授}
+\advisor{刘斌\ 副教授}
 \submitdate{二〇一六年五月}
 %\secrettext{机密\quad 小于等于20年}   % 内部|秘密|机密，注释本行则不保密
 \depart{一二三系}
@@ -20,9 +30,6 @@
 \enadvisor{Prof. Xueshen Qian}
 \ensubmitdate{June, 2099}
 %\ensecrettext{Confidential\quad Less than or equal to 20 years}  % Internal|Secret|Confidential
-
-% 添加的包　by recluse
-\usepackage{enumerate}
 
 \begin{document}
 
@@ -46,21 +53,26 @@
 \tableofcontents
 \listoffigures
 \listoftables
-% \input{chapters/notation}
+% \input{chapters/notation}　　%符号说明（可选）
 
 \mainmatter
 \input{chapters/intro}   %绪论
 \input{chapters/fund_knowledge} %行为识别基础知识
+\input{chapters/recog_framework} %研究点一：基于智能手机的行为识别框架
+\input{chapters/energy_efficient} %研究点二：降低识别能耗的策略动态调整方法
+\input{chapters/application} %人体行为识别系统介绍部分
+\input{chapters/summary} %总结
 %\input{chapters/customize}　　
 %\input{chapters/table}
 %\input{chapters/math}
 \bibliography{bib/tex}
 
+%附录部分（可选）
 %\appendix
 %\chapter{论文规范}
 
 \backmatter
-%\input{chapters/acknowledgements}
-%\input{chapters/publications}
+\input{chapters/acknowledgements}
+\input{chapters/publications}
 
 \end{document} 	

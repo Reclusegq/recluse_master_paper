@@ -244,4 +244,26 @@
   \bibyear{2015}\@, \bibvolume{64}\bibnumber{(9)}\thinspace{}\textnormal{:
   }\bibpages{4230\thinspace{}\textnormal{--}\thinspace{}4244}\@.
 
+\bibitem{lu2010jigsaw}
+\bibauthor{LU H\@, YANG J\@, LIU Z, et~al}\@. \bibtitle{The Jigsaw continuous
+  sensing engine for mobile phone applications}\bibmark{[C]}
+  //\thinspace{}\bibbooktitle{Proceedings of the 8th ACM Conference on Embedded
+  Networked Sensor Systems}\@. \bibyear{2010}\thinspace{}\textnormal{:
+  }\bibpages{71\thinspace{}\textnormal{--}\thinspace{}84}\@.
+
+\bibitem{bin2012classification}
+\bibauthor{bin ABDULLAH M~F~A\@, NEGARA A~F~P\@, SAYEED M~S, et~al}\@.
+  \bibtitle{Classification algorithms in human activity recognition using
+  smartphones}\bibmark{[J]}\@. \bibjournal{\ustcjournal{International Journal
+  of Computer and Information Engineering}}\@, \bibyear{2012}\@,
+  \bibvolume{6}\thinspace{}\textnormal{:
+  }\bibpages{77\thinspace{}\textnormal{--}\thinspace{}84}\@.
+
+\bibitem{bisio2014comparison}
+\bibauthor{BISIO I\@, LAVAGETTO F\@, MARCHESE M, et~al}\@. \bibtitle{Comparison
+  of situation awareness algorithms for remote health monitoring with
+  smartphones}\bibmark{[C]} //\thinspace{}\bibbooktitle{Global Communications
+  Conference (GLOBECOM), 2014 IEEE}\@. \bibyear{2014}\thinspace{}\textnormal{:
+  }\bibpages{2454\thinspace{}\textnormal{--}\thinspace{}2459}\@.
+
 \end{thebibliography}
