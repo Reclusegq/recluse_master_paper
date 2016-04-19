@@ -20,27 +20,28 @@
 
 \subsection{特征提取与特征选择}
 本文中所使用的全部特征列举在表格3.1中， 主要包括时域的特征、频域的特征和关于自相关函数的特征。
+
 \begin{table}[!hbp]
-\begin{tabular}{|c|c|c|c|c|c|}
-\hline
-类别 & 特征名称 & 符号 & 类别 &　特征名称　&　符号　\\
-\hline
-\multirow{4}{*}{时域特征} & b　& $\mu (\textbf{x})$ & \multirow{6}{*}{自相关函数特征}　&　自相关最大值 & $R_M$ \\
-\cline{2-3} \cline{5-6}
-& 信号均值　& $\sigma ^2 (\textbf{x})$ & & 极大值的间隔　&　$I$  \\
-\cline{2-3} \cline{5-6}
-&　窗口差值 & $\mu T$ & & 差分值 & $Diff$ \\
-\cline{2-3} \cline{5-6}
-& 窗口偏差 & $\mu D$ & & 中间部分的最大值 & $Mid_M$ \\
-\cline{1-3} \cline{5-6}
-\multirow{3}{*}{频域特征} & 最大分量 & $F_f$ & & 中间部分的最小值 & $Mid_m$ \\
-\cline{2-3} \cline{5-6}
-& 最大分量的模值 & $A_f$ & & 中间部分的均值 & $Mid_{\mu}$ \\
-\cline{2-6}
-& 能量值 & $E$ & & & \\
-\hline
-\end{tabular}
-\caption{本文所使用的特征列表} %表格的名称
+    \caption{本文所使用的特征列表} %表格的名称
+    \begin{tabular}{|c|c|c|c|c|c|}
+    \hline
+    类别 & 特征名称 & 符号 & 类别 &　特征名称　&　符号　\\
+    \hline
+    \multirow{4}{*}{时域特征} & b　& $\mu (\textbf{x})$ & \multirow{6}{*}{自相关函数特征}　&　自相关最大值 & $R_M$ \\
+    \cline{2-3} \cline{5-6}
+    & 信号均值　& $\sigma ^2 (\textbf{x})$ & & 极大值的间隔　&　$I$  \\
+    \cline{2-3} \cline{5-6}
+    &　窗口差值 & $\mu T$ & & 差分值 & $Diff$ \\
+    \cline{2-3} \cline{5-6}
+    & 窗口偏差 & $\mu D$ & & 中间部分的最大值 & $Mid_M$ \\
+    \cline{1-3} \cline{5-6}
+    \multirow{3}{*}{频域特征} & 最大分量 & $F_f$ & & 中间部分的最小值 & $Mid_m$ \\
+    \cline{2-3} \cline{5-6}
+    & 最大分量的模值 & $A_f$ & & 中间部分的均值 & $Mid_{\mu}$ \\
+    \cline{2-6}
+    & 能量值 & $E$ & & & \\
+    \hline
+    \end{tabular}
 \end{table}
 
 
@@ -49,16 +50,20 @@
 	\item 时域特征
 \end{itemize}
 \par 时域特征包括均值和方差等，计算简单并且可以有助于区分静止和动态行为，其中窗口差值和窗口偏差计算公式如下：
+
 \begin{equation}
 	\mu T = \sum_{i=2}^{M}(|\mu_i - \mu_{i-1}|)
 \end{equation}
 \begin{equation}
 	\mu D = \sum_{i=1}^{M}(|\mu_i - \mu|)
 \end{equation}
+
 其中, 窗口长度为$N$的向量$\textbf{x}$被分割为$M$段，$\mu_i$表示第$i$段数据的均值，$\mu$表示向量$\textbf{x}$的均值。
+
 \begin{itemize}
 	\item 频域特征
 \end{itemize}
+
 \par 本文中频域信号主要是通过快速傅里叶变换(Fast Fourier Transform, FFT)算法计算得到得。在频域中，我们重点关注最大频域分量以及频域的能量分布。频域特征与位置信息相关性较小，可以用来区分动态行为，位置敏感度低，因此受到来自位置变化的影响较小。
 \begin{itemize}
 	\item 自相关函数特征
@@ -70,14 +75,31 @@
 \begin{figure}[!htb]
     \centering
     \subfigure[加速度信号的自相关函数]{
-    \includegraphics[width=0.45\textwidth]{acc_three_dimen5.eps}}
+    \includegraphics[width=0.45\textwidth]{three_dimen_acc.eps}}
     \subfigure[陀螺仪数据的自相关函数]{
-    \includegraphics[width=0.45\textwidth]{gyro_three_dimen5.eps}}
+    \includegraphics[width=0.45\textwidth]{three_dimen_gyro.eps}}
     \caption{传感器三维数据的自相关函数}
 \end{figure}
 
 \par 如图3.2所示，传感器数据三维信号的自相关函数在同一点取得极值，我们记为 $\sigma_i$，表示自相关函数的第$i$个极值。由于加速度传感器和陀螺仪是集成在同一部智能手机当中，因此他们所采取的数据计算相关函数极值的位置也相同。如果将它们各自的三维自相关函数加在一起就可以使得极值更加明显，不易被噪声混淆。另外使用自相关函数的和而非使用三轴向的传感器数据各自提取特征可以有效减少因为方向变化带来的影响。因此，在本文中关于自相关函数的特征都是使用自相关函数的和，即$R = R_x + R_y + R_z$，而不是每一维数据的自相关函数。
 
+\begin{figure}[!htb]
+    \centering
+    \subfigure[加速度信号的自相关函数]{
+    \includegraphics[width=0.45\textwidth]{acti_acc.eps}}
+    \subfigure[陀螺仪数据的自相关函数]{
+    \includegraphics[width=0.45\textwidth]{acti_gyro.eps}}
+    \caption{相同位置下不同行为时数据自相关函数}
+\end{figure}
+
+\begin{figure}[!htb]
+    \centering
+    \subfigure[加速度信号的自相关函数]{
+    \includegraphics[width=0.45\textwidth]{posi_acc.eps}}
+    \subfigure[陀螺仪数据的自相关函数]{
+    \includegraphics[width=0.45\textwidth]{posi_gyro.eps}}
+    \caption{行走状态下不同位置时数据自相关函数}
+\end{figure}
 
 \par 使用自相函数的和计算以下特征，其中本文中使用前m个极值，计算公式分别如下：
 \begin{equation}
@@ -295,3 +317,5 @@ Rear Pocket &0 &12 &30 &30 &30 &30\\
     \bottomrule
     \end{tabular}
  \end{table}
+
+ \section{本章小结}
